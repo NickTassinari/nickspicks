@@ -1,4 +1,6 @@
-<%= form_with method: :get, url: "/movies" do |f| %>
+<%= form_with method: :get, url: "/movies", local: true do |f| %>
   <%= f.text_field :movie_search, name: :movie_search %>
   <%= f.submit 'Search Movies' %>
 <% end %>
+
+<%= link_to "Cat Facts", "/facts" %>

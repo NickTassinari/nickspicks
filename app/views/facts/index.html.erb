@@ -1,0 +1,7 @@
+<h1>Here's a few cat facts: </h1>
+<% @facts.each do |fact| %>
+  <%= fact.fact %><br>
+<% end %>
+
+<% image_filename = "cats/chudi.jpeg" %>
+<%= image_tag('cats/chudi.jpeg', alt: 'chude', class: 'cat-image', style: 'width:300px;height:auto;') %>
