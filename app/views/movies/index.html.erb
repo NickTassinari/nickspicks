@@ -1,0 +1,9 @@
+<% @movies.each do |movie|%>
+  <h1>You should totally just watch <%= movie.title %></h1>
+  <%= movie.overview %>
+<% end %>
+<br>
+<% image_filename = "movies/zardoz.jpg" %>
+<%= image_tag('movies/zardoz.jpg', alt: 'zardoz', class: 'movie-image', style: 'width:500px;height:auto;') %>
+<% image_filename = "movies/zardoz poster.jpeg" %>
+<%= image_tag('movies/zardoz poster.jpeg', alt: 'zardoz poster', class: 'movie-image', style: 'width:500px;height:auto;') %>

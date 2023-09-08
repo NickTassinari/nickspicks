@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?query=Zardoz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - ": Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjODU2NmUwOWQ0YzhlNzA5MGY3OTk4NzY5ZTY3YmVjYyIsInN1YiI6IjY0YTZlOWUxY2FlNjMyMDExZmEzM2VlMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ktR8_NTm6-4HlR71ClUP35avYe-PIpSUAyF3mFqWCpI"
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 08 Sep 2023 17:00:59 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=27855
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 88b6cb3326a2cca56a7849606237042f
+      X-Memc-Age:
+      - '2400'
+      X-Memc-Expires:
+      - '25790'
+      Etag:
+      - W/"40e327d68961b7cae9aa3c3a6ab8aa64"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d29afc70fc2fdadee440493854714224.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - nowTBKsqle4fCgbckap-Sg6ix_VRq-8xNhHcngxvqgLlLoLzrhjijg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/xP91Ux8P3dCeSHbPZHRSLTpemxF.jpg","genre_ids":[14,28,53,878],"id":4923,"original_language":"en","original_title":"Zardoz","overview":"In
+        the far future, a savage trained only to kill finds a way into the community
+        of bored immortals that alone preserves humanity''s achievements.","popularity":14.258,"poster_path":"/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg","release_date":"1974-02-06","title":"Zardoz","video":false,"vote_average":5.952,"vote_count":384}],"total_pages":1,"total_results":1}'
+  recorded_at: Fri, 08 Sep 2023 17:00:59 GMT
+recorded_with: VCR 6.2.0
