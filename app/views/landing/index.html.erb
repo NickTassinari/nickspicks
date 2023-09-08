@@ -1,6 +1,25 @@
-<%= form_with method: :get, url: "/movies", local: true do |f| %>
-  <%= f.text_field :movie_search, name: :movie_search %>
-  <%= f.submit 'Search Movies' %>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: sagegreen !important; /* Set the background color to sage green and use !important to increase specificity */
+      font-family: Helvetica, sans-serif; /* Set the font to Helvetica or a sans-serif fallback */
+      color: black; /* Set the text color to black */
+    }
+    h1 {
+      text-align: center; /* Center-align the heading */
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my page. You are all under my dominion now!</h1>
 
-<%= link_to "Cat Facts", "/facts" %>
+  <%= form_with method: :get, url: "/movies", local: true do |f| %>
+    <%= f.text_field :movie_search, name: :movie_search %>
+    <%= f.submit 'Search Movies' %>
+  <% end %>
+  <br>
+  <%= link_to "Cat Facts", "/facts" %>
+</body>
+</html>
